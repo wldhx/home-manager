@@ -176,6 +176,7 @@ let
     (loadModule ./services/pass-secret-service.nix { condition = hostPlatform.isLinux; })
     (loadModule ./services/password-store-sync.nix { condition = hostPlatform.isLinux; })
     (loadModule ./services/pasystray.nix { })
+    (loadModule ./services/pcscd.nix { })
     (loadModule ./services/pbgopy.nix { condition = hostPlatform.isLinux; })
     (loadModule ./services/picom.nix { })
     (loadModule ./services/plan9port.nix { condition = hostPlatform.isLinux; })
